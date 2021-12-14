@@ -1,0 +1,15 @@
+html
+  head
+    title= Users
+    style
+          include style.css
+  body
+    table.table.table-striped
+          tr
+            th ID
+            th Name
+
+          each user in users
+            tr
+              td= user.id
+              td= user.name
